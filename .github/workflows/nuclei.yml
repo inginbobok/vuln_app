@@ -20,7 +20,7 @@ jobs:
       - name: Nuclei - DAST Scan 2
         uses: projectdiscovery/nuclei-action@main
         with:
-          target: http://localhost:8080
+          target: http://localhost:5050
     
       - name: Stop containers
         if: always()
